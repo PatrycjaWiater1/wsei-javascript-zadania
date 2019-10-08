@@ -103,3 +103,37 @@ function sortArray(array){
 }
 
 sortArray([145,11,3,64,4,6,10])
+
+
+// zad7
+
+function addArrays(arrayOne, arrayTwo){
+    
+    let len;
+    let newArr = [];
+    
+    if(arrayOne.length > arrayTwo.length){
+        len = arrayOne.length;
+    } 
+    else {
+        len = arrayTwo.length;
+    }
+
+    for(let i=0; i < len; i++){
+
+       if(typeof(arrayOne[i]) === "undefined") {
+           newArr.push(arrayTwo[i]);
+       }
+       else if(typeof(arrayTwo[i]) === "undefined"){
+           newArr.push(arrayOne[i]);
+       }
+       else{
+        newArr.push(arrayOne[i] + arrayTwo[i]);
+       }
+       
+    }
+    console.log(newArr);
+    return newArr;
+}
+
+addArrays([4,0,1,3,4], [1,9,6,7,8,17])
