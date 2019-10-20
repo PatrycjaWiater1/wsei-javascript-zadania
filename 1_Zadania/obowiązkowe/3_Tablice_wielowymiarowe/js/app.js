@@ -1,38 +1,38 @@
-// // Zad0
+// Zad0
 
-// function checkArray(arrayTwoD) {
-//     let newArr = [];
+function checkArray(arrayTwoD) {
+    let newArr = [];
 
-//     for (let i = 0; i < arrayTwoD.length; i++) {
+    for (let i = 0; i < arrayTwoD.length; i++) {
 
-//         let second = arrayTwoD[i];
+        let second = arrayTwoD[i];
 
-//         for (let j = 0; j < second.length; j++) {
+        for (let j = 0; j < second.length; j++) {
 
-//             if (arrayTwoD[i][j] % 2 === 0) {
-//                 newArr.push(true);
-//             }
-//             else {
-//                 newArr.push(false);
-//             }
+            if (arrayTwoD[i][j] % 2 === 0) {
+                newArr.push(true);
+            }
+            else {
+                newArr.push(false);
+            }
 
             
-//         }
+        }
         
-//     }
-//     console.log(newArr);
-//     return newArr;
+    }
+    console.log(newArr);
+    return newArr;
  
-// }
+}
 
-// var arr = [
-//     [11, 12],
-//     [42, 2],
-//     [-4, -120],
-//     [0, 0],
-//     [1, 34],
-// ];
-// checkArray(arr);
+var arr = [
+    [11, 12],
+    [42, 2],
+    [-4, -120],
+    [0, 0],
+    [1, 34],
+];
+checkArray(arr);
 
 
 // zad1
@@ -51,34 +51,35 @@ var task2Array = [
     [5, 6, 7, 8],
     [9, 10, 11, 12]
 ];
-//console.log(task1Array[3][2]);
+console.log(task1Array[3][2]);
 
 for(let i = 0; i<task1Array.length; i++){
     if(i===1){
-        //console.log(task1Array[i].length);
+        console.log(task1Array[i].length);
     }
 }
 
-//console.log(task1Array[4][2]);
+console.log(task1Array[4][2]);
 
 //zad2
 
-//task2Array.forEach(num => console.log(num));
-//task2Array.forEach(num => console.log(num.length));
+task2Array.forEach(num => console.log(num));
+task2Array.forEach(num => console.log(num.length));
 
 for(let i = 0; i<task2Array.length; i++){
     
     for(let j = 0; j<task2Array[i].length; j++){
-        //console.log(task2Array[i][j]);
+        console.log(task2Array[i][j]);
     }
 }
 
+//zad3
 function  print2DArray(arrayTwoD){
     arrayTwoD.forEach(element => element.forEach(num => console.log(num)));
 }
 
 
-//print2DArray(task2Array);
+print2DArray(task2Array);
 
 //zad4
 
@@ -112,5 +113,5 @@ function create2DArray(rows, columns){
     return newTable;
 }
 
-//create2DArray(4,4);
+create2DArray(4,4);
 
