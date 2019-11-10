@@ -6,19 +6,16 @@ function checkArray(arrayTwoD) {
     for (let i = 0; i < arrayTwoD.length; i++) {
 
         let second = arrayTwoD[i];
-
+        let check = true;
         for (let j = 0; j < second.length; j++) {
 
-            if (arrayTwoD[i][j] % 2 === 0) {
-                newArr.push(true);
+            if (arrayTwoD[i][j] % 2 !== 0) {
+                check = false;
+                break;
             }
-            else {
-                newArr.push(false);
-            }
-
             
         }
-        
+        newArr.push(check);
     }
     console.log(newArr);
     return newArr;
@@ -51,13 +48,10 @@ var task2Array = [
     [5, 6, 7, 8],
     [9, 10, 11, 12]
 ];
+
 console.log(task1Array[3][2]);
 
-for(let i = 0; i<task1Array.length; i++){
-    if(i===1){
-        console.log(task1Array[i].length);
-    }
-}
+console.log(task1Array[1].length);
 
 console.log(task1Array[4][2]);
 
