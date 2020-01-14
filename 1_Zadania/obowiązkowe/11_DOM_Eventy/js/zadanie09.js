@@ -23,6 +23,8 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     innerFuncOne();
 
+    //użyję tego elementu jako argumentu w funkcji
+
   });
 
 })
