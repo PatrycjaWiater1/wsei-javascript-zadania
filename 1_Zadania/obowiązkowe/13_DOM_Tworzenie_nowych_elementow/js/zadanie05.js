@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 document.addEventListener('DOMContentLoaded', function() {
     
     let buttons = document.querySelectorAll('.moveBtn');
@@ -20,4 +21,24 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
 
+=======
+document,addEventListener('DOMContentLoaded', function() {
+    let moveBtn = document.querySelectorAll('.moveBtn');
+    let listOne = document.querySelector('#list1');
+    let listTwo = document.querySelector('#list2');
+
+    moveBtn.forEach(button => {
+        button.addEventListener('click', function() {
+
+            if (this.parentNode.parentNode == listOne) {
+                listOne.removeChild(this.parentNode);
+                listTwo.appendChild(this.parentNode);
+            }
+            else {
+                listTwo.removeChild(this.parentNode);
+                listOne.appendChild(this.parentNode);
+            }
+        });
+    });
+>>>>>>> d18c0f13b7f88d32fa47991bdf8a9d86f9b05701
 });
