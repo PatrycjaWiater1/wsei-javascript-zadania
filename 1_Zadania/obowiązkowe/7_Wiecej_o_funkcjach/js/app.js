@@ -5,28 +5,28 @@
  */
 
 
-//Twoj komentarz ...
+//Funkcja
 function jeden() {
 
-    //Twoj komentarz ...
+    //Zmienna w funkcji "jeden"
     var zmienna1 = 1;
 
-    //Twoj komentarz ...
+    //Funkcja wewnątrz funcji "jeden"
     function dwa() {
 
-        //Twoj komentarz ...
+        //Wypisuje w konsoli wartość zmiennej1
         console.log(zmienna1);
 
-        //Twoj komentarz ...
+        //Zmienna wewnątrz funkcji "dwa" - "jeden" nie ma do niej dostępu
         var zmienna2 = 3;
     }
 
-    //Twoj komentarz ...
+    //wywołanie funkcji "dwa"
     dwa();
 
-    //Twoj komentarz ...
+    //wypisanie w konsoli wartości zmiennej2
     console.log(zmienna2)
 }
 
-//Twoj komentarz ...
+//wywołanie zewnętrznej funkcji "jeden"
 jeden()
