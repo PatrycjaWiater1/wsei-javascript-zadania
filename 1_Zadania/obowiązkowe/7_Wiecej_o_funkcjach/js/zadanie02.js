@@ -1,5 +1,5 @@
 function callOtherFunction(nameOfFunction) {
-    console.log("Cześć jestem funkcją o nazwie 'callOtherFunction' i wywołuję funkcję, którą ktoś mi wrzucił jako parametr");
+    console.log("Cześć, jestem funkcją o nazwie 'callOtherFunction' i wywołuję funkcję, którą ktoś mi wrzucił jako parametr");
 
     var randomNumber1 = Math.random() * 20;
     var randomNumber2 = Math.random() * 10;
@@ -11,4 +11,5 @@ callOtherFunction(function (a, b) {
     console.log("Druga liczba", b)
     console.log("Wynik", a + b)
 })
+
 

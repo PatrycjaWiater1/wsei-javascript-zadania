@@ -79,4 +79,29 @@ document.addEventListener("DOMContentLoaded", function () {
         return arr;
     }
     getTags(childElements);
+
+    //zad 5
+
+    
+    function getClassInfo(element) {
+        console.log(element.classList);
+        return element.classList;
+    }
+
+    getClassInfo(banner);
+
+    //zad 6
+
+    const elem = document.querySelectorAll('nav li');
+    console.log(elem);
+    function setDataDirection(elements) {
+        for(let i = 0; i < elements.length; i++) {
+            if(elements[i].dataset.direction === undefined) {
+                elements[i].dataset.direction = 'top';
+            }
+            console.log(elements[i].dataset.direction);
+        }
+    }
+
+    setDataDirection(elem);
 });

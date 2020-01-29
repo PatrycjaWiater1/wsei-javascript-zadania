@@ -12,3 +12,5 @@ var say = function(){
     console.log('witaj!')
 }
 say();
+
+// wyrażenia funkcyjnego nie możemy wywołać przed jego definicją.
